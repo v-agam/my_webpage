@@ -21,7 +21,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I'm Agam Vuppulury, A passionate Data, ML & AI Scientist with over 10 years of experience building scalable Machine Learning applications and industrial solutions. I am also currently doing research in AI safety domain.
+            I am Agam Vuppulury, A passionate Data, ML & AI Scientist with over 10 years of experience building scalable Machine Learning applications and industrial solutions. I am also currently doing research in AI safety domain.
           </p>
         </div>
 
