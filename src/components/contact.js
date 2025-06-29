@@ -73,7 +73,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities and interesting projects. Let's connect!
+            I am always open to discussing new opportunities and interesting projects. Let&apos;s connect!
           </p>
         </div>
 
@@ -192,7 +192,7 @@ export default function Contact() {
 
               {submitStatus === 'success' && (
                 <p className="text-green-600 dark:text-green-400 text-center">
-                  Message sent successfully! I'll get back to you soon.
+                  Message sent successfully! I&apos;ll get back to you soon.
                 </p>
               )}
 
