@@ -1,8 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { HeartHandshake, Globe2, Users, HelpingHand, Leaf } from 'lucide-react'
-import { FaChalkboardTeacher,FaHeartbeat, FaChild, FaLeaf, FaBookOpen } from 'react-icons/fa';
+import { ArrowRight } from 'lucide-react'
+import { FaChalkboardTeacher, FaHeartbeat, FaChild, FaLeaf } from 'react-icons/fa'
 
 const volunteeringActivities = [
   {
@@ -14,7 +14,7 @@ const volunteeringActivities = [
     border: 'border-purple-600 dark:border-purple-400',
     dash: 'before:border-purple-300 dark:before:border-purple-700',
   },
-    {
+  {
     title: 'Technical Mentoring for Young Minds',
     image: '/volunteering/mentor.jpg',
     link: 'https://www.dei.ac.in/dei/distanceEducation/index.php/study-centres',
@@ -44,7 +44,7 @@ const volunteeringActivities = [
   {
     title: 'Health Awareness Champion',
     image: '/volunteering/health.png',
-    //link: 'https://yourwebsite.com/volunteering/global',
+    link: '/certificates/first_aid.png',
     icon: FaHeartbeat,
     role: 'Volunteer',
     border: 'border-blue-600 dark:border-blue-400',
@@ -61,7 +61,7 @@ export default function Volunteering() {
             Volunteering
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-200 max-w-2xl mx-auto font-medium">
-            Giving back to the community has always been at the heart of my journey. Here are some of the causes and initiatives I’ve been privileged to be part of — each experience has shaped me and brought immense joy and meaning to my life.
+            Giving back to the community has always been at the heart of my journey. Here are some of the causes and initiatives I&apos;ve been privileged to be part of — each experience has shaped me and brought immense joy and meaning to my life.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
@@ -72,38 +72,37 @@ export default function Volunteering() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`
-                  relative group w-full
-                  rounded-3xl
-                  border-4 ${activity.border}
-                  bg-gradient-to-br from-white/90 to-emerald-100 dark:from-gray-900/80 dark:to-emerald-900
-                  shadow-xl
-                  hover:shadow-2xl
-                  transition-shadow duration-300
-                  overflow-hidden
-                  cursor-pointer
-                  before:absolute before:inset-0 before:rounded-2xl before:border-4 before:border-dashed ${activity.dash} before:pointer-events-none
+                  relative group w-full rounded-3xl border-4 border-transparent bg-gradient-to-br from-white/90 to-emerald-100 dark:from-gray-900/80 dark:to-emerald-900 shadow-xl transition-all duration-300 overflow-hidden cursor-pointer
+                  before:absolute before:inset-0 before:rounded-2xl before:border-4 before:border-dashed before:border-transparent before:pointer-events-none
                   after:absolute after:inset-0 after:rounded-2xl after:bg-gradient-to-tr after:from-emerald-100/10 after:to-transparent after:pointer-events-none
-                  aspect-[3/4]
+                  hover:scale-105 hover:shadow-2xl hover:border-primary-600 hover:before:border-primary-400
                 `}
                 style={{ minHeight: 260 }}
               >
                 {/* Decorative Icon */}
                 <div className="absolute top-4 right-4 z-10 bg-white/80 dark:bg-gray-900/80 p-2 rounded-full shadow-lg border-2 border-emerald-500 dark:border-emerald-400">
-                  {/* Support both Lucide and React Icons */}
                   {typeof activity.icon === 'function' ? (
                     <activity.icon className="text-emerald-700 dark:text-emerald-300" size={26} />
                   ) : null}
                 </div>
-                {/* Image fills the tile */}
+                {/* Image fills tile, left-aligned */}
                 <div className="absolute inset-0">
                   <Image
                     src={activity.image}
                     alt={activity.title}
                     fill
-                    className="object-cover object-centre w-full h-full"
+                    className="object-cover object-left w-full h-full transition-transform duration-300"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
+                  {/* Overlay on hover */}
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-lg font-semibold drop-shadow-lg flex items-center gap-2">
+                      Click to View
+                      <ArrowRight size={22} className="text-white drop-shadow" />
+                    </span>
+                  </div>
                 </div>
+                {/* Role overlay at bottom */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-5">
                   <h4 className="text-white text-lg font-bold drop-shadow-lg tracking-wide text-center">
                     {activity.role}
