@@ -35,7 +35,7 @@ export default function About() {
                 I started my journey in Data Analytics and Machine Learning with the MS in Analytics from Georgia Institute of Technology and have since worked with startups and established companies, helping them bring their digital visions to life.
               </p>
               <p>
-                My expertise spans across Data Analytics - Predictive Analytics, Descriptive Analytics, Diagnostic Analytics and Prescriptive Analytics, Machine Learning, Generative AI and its applications like ChatGPT, RAG, finetuning LLMs and Custom LLM model training. I have used PowerBI dashboards to communicate my results effectively to management stakeholders.
+                My expertise spans across Data Analytics - Predictive Analytics, Descriptive Analytics, Diagnostic Analytics and Prescriptive Analytics, Machine Learning, Generative AI and its applications like ChatGPT, RAG, finetuning LLMs and Custom LLM model training. I have used PowerBI dashboards to communicate my results effectively to project stakeholders.
               </p>
               <p>
               I specialize in strategic consulting, having led growth strategy assessments for clients expanding into new product categories and markets. I excel at identifying and prioritizing actionable opportunities across the value chain to drive meaningful results.
