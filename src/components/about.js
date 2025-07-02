@@ -38,6 +38,9 @@ export default function About() {
                 My expertise spans across Data Analytics - Predictive Analytics, Descriptive Analytics, Diagnostic Analytics and Prescriptive Analytics, Machine Learning, Generative AI and its applications like ChatGPT, RAG, finetuning LLMs and Custom LLM model training. I have used PowerBI dashboards to communicate my results effectively to management stakeholders.
               </p>
               <p>
+              I specialize in strategic consulting, having led growth strategy assessments for clients expanding into new product categories and markets. I excel at identifying and prioritizing actionable opportunities across the value chain to drive meaningful results.
+              </p>
+              <p>
                 My work experience includes MNCs like TCS, Pratt & Whitney and Ernst & Young, where I have led teams to deliver impactful solutions in various domains like avionics, financial services, oil & gas, commercial foodservice equipment manufacturing. I also mentor aspiring data scientists to help them realize professional excellence in the domain.
               </p>
             </div>
