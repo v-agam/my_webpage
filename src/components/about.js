@@ -21,7 +21,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I am Agam Vuppulury, A passionate Data, ML & AI Scientist with over 10 years of experience building scalable Machine Learning applications and industrial solutions. I am also currently doing research in AI safety domain.
+            I am Agam Vuppulury, A passionate Data, ML & AI Scientist with over 10 years of experience building scalable Machine Learning applications and industrial solutions. I am also currently doing research in AI safety.
           </p>
         </div>
 
@@ -30,12 +30,12 @@ export default function About() {
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
               My Professional Journey
             </h3>
-            <div className="space-y-4 text-gray-600 dark:text-gray-300">
+            <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify">
               <p>
                 I started my journey in Data Analytics and Machine Learning with the MS in Analytics from Georgia Institute of Technology and have since worked with startups and established companies, helping them bring their digital visions to life.
               </p>
               <p>
-                My expertise spans across Data Analytics - Predictive Analytics, Descriptive Analytics, Diagnostic Analytics and Prescriptive Analytics, Machine Learning, Generative AI and its applications like ChatGPT, RAG, finetuning LLMs and Custom LLM model training.
+                My expertise spans across Data Analytics - Predictive Analytics, Descriptive Analytics, Diagnostic Analytics and Prescriptive Analytics, Machine Learning, Generative AI and its applications like ChatGPT, RAG, finetuning LLMs and Custom LLM model training. I have used PowerBI dashboards to communicate my results effectively to management stakeholders.
               </p>
               <p>
                 My work experience includes MNCs like TCS, Pratt & Whitney and Ernst & Young, where I have led teams to deliver impactful solutions in various domains like avionics, oil & gas, commercial foodservice equipment manufacturing. I have also mentored and guided aspiring data scientists.
